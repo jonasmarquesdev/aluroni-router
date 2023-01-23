@@ -16,6 +16,7 @@ export default function NotFound() {
         <button onClick={() => navigate(-1)}> 
           {'< Voltar'}
         </button>
+        {/* o -1 faz voltar a página anterior inves de uma página fixa */}
         {/* <button onClick={() => navigate('/')}> 
           {'< Voltar'}
         </button> */}
