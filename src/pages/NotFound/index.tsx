@@ -13,13 +13,13 @@ export default function NotFound() {
     })}>
       <div className={styles.voltar}>
         {/* voltando com react-router-dom*/}
-        <button onClick={() => navigate(-1)}> 
-          {'< Voltar'}
-        </button>
         {/* o -1 faz voltar a página anterior inves de uma página fixa */}
         {/* <button onClick={() => navigate('/')}> 
           {'< Voltar'}
         </button> */}
+        <button onClick={() => navigate(-1)}> 
+          {'< Voltar'}
+        </button>
       </div>
       <NotFoundImage />
     </div>
