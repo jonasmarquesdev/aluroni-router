@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Buscador.module.scss';
-import { CgSearch } from 'react-icons/cg';
+import { CgSearch, CgClose } from 'react-icons/cg';
 
 interface Props {
   busca: string;
@@ -15,6 +15,7 @@ export default function Buscador({ busca, setBusca }: Props) {
         onChange={(evento) => setBusca(evento.target.value)}
         placeholder="Buscar"
       />
+      <CgClose size={20} color="#4C4D5E" onClick={() => setBusca('')} />
       <CgSearch size={20} color="#4C4D5E" />
     </div>
   );
